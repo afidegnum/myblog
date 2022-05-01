@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Blog Layout (using bootstrap)</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+<link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Anton|Merriweather'><link rel="stylesheet" href="./style.css">
+
+
+</head>
+<body >
+<nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a data-field="layout.logo_url" class="navbar-brand" href="#">Freakin Blog</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul data-table="menus" class="nav navbar-nav navbar-right">
+        (((data-table . menus) (data-field . menus.text)))
+        <li><a data-field="menus.text" href="#">Home <span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="#">Blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Moar freakin stuff <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Concepts</a></li>
+            <li><a href="#">Inspiration</a></li>
+            <li><a href="#">Resources</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<header>
+  <div class="container-fluid">
+    <div data-table="pages" class="jumbotron">
+      <h1 data-field="pages.title" class="display-3 text-center">Blog</h1>
+      <p data-field="pages.heading" class="lead text-center">Talking about things and stuff</p>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9">
+
+        <section data-table="blogs">
+          <div class="tags">
+            <ul>
+              <li><a data-field="blogs.tag_name" href="#">consectetur</a></li>
+              <li><a href="#">placeat</a></li>
+              <li><a href="#">mollitia</a></li>
+            </ul>
+          </div>
+          <h2 data-field="blogs.title">Article</h2>
+          <p data-field="blogs.content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque quos inventore repudiandae optio quibusdam cupiditate odio, molestiae dolor nam temporibus quas labore facere, non in obcaecati reiciendis harum, placeat animi.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis doloribus nihil exercitationem nostrum, cumque debitis, aut quos. Rerum, libero, vero deserunt veritatis quidem eaque magnam quos incidunt voluptatem mollitia blanditiis!</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus rerum eveniet non doloremque iusto deserunt minima facilis ea illo fugiat, velit assumenda ullam quaerat dolor iste corrupti neque inventore nobis!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio quae, neque incidunt odit, quisquam necessitatibus reprehenderit est, voluptatum dolor facilis unde ullam possimus obcaecati laboriosam nihil! Numquam iure pariatur perferendis.Impedit facilis sint ex, commodi, laborum deleniti est adipisci cumque molestias at. Repellendus consectetur totam reiciendis omnis id maxime tempora ipsam aut!</p>
+          <div class="text-right"><a data-field="slug" href="#">Read more >></a></div>
+        </section>
+        
+        <section>
+          <div class="tags">
+            <ul>
+              <li><a href="#">neque</a></li>
+              <li><a href="#">adipisicing</a></li>
+              <li><a href="#">inventore</a></li>
+              <li><a href="#">dolor</a></li>
+            </ul>
+          </div>
+          <h2>Another One</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab neque saepe quibusdam nihil! Suscipit similique asperiores quasi facilis delectus quod excepturi, ullam, accusamus et, deleniti natus, eos omnis qui sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis natus dicta error, vel nostrum laboriosam hic. Dolorum nihil atque voluptates similique ipsa commodi, error velit eius aspernatur sequi, incidunt repellendus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione neque reprehenderit voluptatem molestias ullam minima illo culpa distinctio dolorum excepturi minus animi illum unde, vitae accusantium, placeat nesciunt magni quasi?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam ut hic, expedita nostrum, dicta nam illo numquam incidunt fugiat debitis voluptate tempora aut aliquam quae saepe minima, inventore voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod impedit dicta repellat doloribus enim voluptates quo, libero in quidem dolores, blanditiis illum omnis fuga magnam, aperiam nesciunt cumque tempora laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae omnis ex labore cupiditate incidunt natus, cum reiciendis excepturi fugiat eum laudantium est consequatur rem aliquam dolorum ipsa voluptatum voluptates.</p>
+          <div class="text-right"><a href="#">Read more >></a></div>
+        </section>
+        
+        <section>
+          <div class="tags">
+            <ul>
+              <li><a href="#">amet</a></li>
+              <li><a href="#">aperiam</a></li>
+              <li><a href="#">consectetur</a></li>
+            </ul>
+          </div>
+          <h2>Something Else</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab neque saepe quibusdam nihil! Suscipit similique asperiores quasi facilis delectus quod excepturi, ullam, accusamus et, deleniti natus, eos omnis qui sint.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis natus dicta error, vel nostrum laboriosam hic. Dolorum nihil atque voluptates similique ipsa commodi, error velit eius aspernatur sequi, incidunt repellendus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione neque reprehenderit voluptatem molestias ullam minima illo culpa distinctio dolorum excepturi minus animi illum unde, vitae accusantium, placeat nesciunt magni quasi?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam ut hic, expedita nostrum, dicta nam illo numquam incidunt fugiat debitis voluptate tempora aut aliquam quae saepe minima, inventore voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod impedit dicta repellat doloribus enim voluptates quo, libero in quidem dolores, blanditiis illum omnis fuga magnam, aperiam nesciunt cumque tempora laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae omnis ex labore cupiditate incidunt natus, cum reiciendis excepturi fugiat eum laudantium est consequatur rem aliquam dolorum ipsa voluptatum voluptates.</p>
+          <div class="text-right"><a href="#">Read more >></a></div>
+        </section>
+        
+        <section>
+          <div class="tags">
+            <ul>
+              <li><a href="#">ipsum</a></li>
+              <li><a href="#">saepe</a></li>
+              <li><a href="#">nihil</a></li>
+              <li><a href="#">similique</a></li>
+              <li><a href="#">facilis</a></li>
+            </ul>
+          </div>
+          <h2>Coffee Beans</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab neque saepe quibusdam nihil! Suscipit similique asperiores quasi facilis delectus quod excepturi, ullam, accusamus et, deleniti natus, eos omnis qui sint. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis natus dicta error, vel nostrum laboriosam hic. Dolorum nihil atque voluptates similique ipsa commodi, error velit eius aspernatur sequi, incidunt repellendus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione neque reprehenderit voluptatem molestias ullam minima illo culpa distinctio dolorum excepturi minus animi illum unde, vitae accusantium, placeat nesciunt magni quasi?</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos aperiam ut hic, expedita nostrum, dicta nam illo numquam incidunt fugiat debitis voluptate tempora aut aliquam quae saepe minima, inventore voluptatibus.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod impedit dicta repellat doloribus enim voluptates quo, libero in quidem dolores, blanditiis illum omnis fuga magnam, aperiam nesciunt cumque tempora laboriosam.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus repudiandae omnis ex labore cupiditate incidunt natus, cum reiciendis excepturi fugiat eum laudantium est consequatur rem aliquam dolorum ipsa voluptatum voluptates.</p>
+          <div class="text-right"><a href="#">Read more >></a></div>
+        </section>
+
+      </div>
+      <div class="col-sm-3">
+        
+        <aside>
+          <h3>Sign Up</h3>
+          <p>If you like what we-re doing, sign up for updates and more.</p>
+          <input type="button" class="btn" value="Sign Up!">
+        </aside>
+
+        <aside>
+          <h3 data-field="pages.sidebar_title">Sidebar</h3>
+          <p data-field="pages.sidebar_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias unde officiis fugiat odit quibusdam ut corrupti voluptatum in nostrum sint corporis, libero numquam? Fugit consequuntur reprehenderit, esse debitis velit officiis.</p>
+        </aside>
+        
+        <aside class="tags">
+          <h3 data-table="tags">Tags</h3>
+          <ul>
+            <li><a data-field="tags.name" href="#">esse</a></li>
+            <li><a href="#">quibusdam</a></li>
+            <li><a href="#">nostrum</a></li>
+            <li><a href="#">amet</a></li>
+            <li><a href="#">elit</a></li>
+            <li><a href="#">corporis</a></li>
+            <li><a href="#">fugiat</a></li>
+            <li><a href="#">odit</a></li>
+            <li><a href="#">consectetur</a></li>
+            <li><a href="#">unde</a></li>
+            <li><a href="#">corrupti</a></li>
+            <li><a href="#">adipisicing</a></li>
+            <li><a href="#">libero</a></li>
+            <li><a href="#">officiis</a></li>
+            <li><a href="#">numquam</a></li>
+          </ul>
+        </aside>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p class="text-center"><a href="https://timothycdykes.me" target="_blank" rel="nofollow">Timothy</a></p>
+  <p class="text-center">Copy 2017 - all rights reserved.</p>
+</footer>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js'></script>
+</body>
+</html>
